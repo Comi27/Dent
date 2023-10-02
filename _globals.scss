@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: $bodyFont;
+    font-size: 18px;
+    color: $text;
+}
+
+h1, h2, h3, h4{
+    font-family: $headerFont;
+    font-weight: 700;
+    color: $darkBlue;
+    text-transform: capitalize;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $text;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    transition: $transition;
+    &:hover{
+        color: $blue;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    @media (max-width: 767px){
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.btn-1{
+    border: 2px solid $blue;
+    padding: 17px 30px;
+    background: $blue;
+    border-radius: 30px;
+    color: $white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+        background: transparent;
+        color: $blue;
+    }
+}
+
+.py{
+    padding: 100px 0;
+    @media (max-width: 576px){
+        padding: 50px 0;
+    }
+}
